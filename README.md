@@ -1,1 +1,1 @@
-This is a playground regaring SCSS
+This is a playground regarding SCSS
