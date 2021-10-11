@@ -1,0 +1,31 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin animation($duration, $delay, $fill, $count){
+    $name: #{unique-id()};
+    @keyframes #{$name} {
+        @content;
+    }
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-delay: $delay;
+    animation-fill-mode: $fill;
+    animation-iteration-count: $count;
+}
+
+body {
+    padding: 3%;
+    background-color: $secondary-color;
+    color: $primary-color;
+}
+
+.Nav {
+    .List {
+        list-style: none;
+    }
+}
