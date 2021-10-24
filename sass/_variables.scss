@@ -1,2 +1,19 @@
 $primary-color: rgb(105, 19, 19);
 $secondary-color: rgb(255, 255, 236);
+$font-size-base: 1.5rem;
+$padding-size-base: 10px;
+$margin-size-base: 20px;
+
+$colors: (
+    "primary": $primary-color,
+    "secondary": $secondary-color,
+    "blue": rgb(103, 168, 170),
+    "purple": rgb(187, 113, 209),
+    "green": rgb(166, 209, 102),
+    "orange": rgb(255, 145, 36),
+    "red": rgb(112, 27, 48),
+    "black": rgb(0, 0 ,0),
+    "white": rgb(255, 255, 255)
+);
+
+$box-shadow-base: 0px 0px 10px rgba(0, 0, 0, 50%);

@@ -8,17 +8,105 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <nav class="Nav">
-        <ul class="List">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-        </ul>
-    </nav>
-    <h1>SCSS</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, perspiciatis!</p>
-    <button>CLICK ME</button>
+    <header>
+        <!-- Hvorfor lave mange variationer af navbar når vi allerede har lavet bg classes? -->
+        <nav class="navbar bg-primary-5-dark text-white">
+            <div class="container">
+                <h2 class="fs-l fw-b">SCSS Example</h2>
+                <p>Cool SCSS Libary</p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="fs fw-n">Font Sizes:</h2>
+            <h1 class="fs-xxl scale-animation d-i-b">XX-LARGE</h1>
+            <h2 class="fs-xl">X-LARGE</h1>
+            <h3 class="fs-l">LARGE</h2>
+            <p class="fs">BASE</p>
+            <p class="fs-s">SMALL</p>
+            <p class="fs-xs">X-SMALL</p>
+        </section>
+        <section class="text-white">
+            <h2 class="text-primary fs fw-n">Font Colors:</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="text-primary p-1">text-primary</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="text-secondary bg-black p-1">text-secondary</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="text-blue p-1">text-blue</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="text-purple p-1">text-purple</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="text-green p-1">text-green</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="text-orange p-1">text-orange</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="text-red p-1">text-red</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="text-black p-1">text-black</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="bg-primary p-1">bg-primary</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="bg-secondary text-black p-1">bg-secondary</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="bg-blue p-1">bg-blue</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="bg-purple p-1">bg-purple</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="bg-green p-1">bg-green</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="bg-orange p-1">bg-orange</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="bg-red p-1">bg-red</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <p class="bg-black p-1">bg-black</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="fs fw-n">Media Queries:</h2>
+            <p class="fs test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, perspiciatis!</p>
+        </section>
+        <section>
+            <h2 class="fs fw-n">Buttons & Grid-system:</h2>
+            <div class="container">
+                <div class="row gap-3 justify-space-between">
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <button class="btn-border-red">CLICK ME</button>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <button class="btn-purple">CLICK ME</button>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <button class="btn-complement-orange">CLICK ME</button>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-xl-3">
+                        <button class="btn-border-complement-primary">CLICK ME</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

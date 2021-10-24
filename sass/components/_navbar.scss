@@ -1,0 +1,15 @@
+%flex-layout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.navbar {
+    @extend %flex-layout;
+    padding: $padding-size-base $padding-size-base * 2;
+    box-shadow: $box-shadow-base;
+    .container {
+        @extend %flex-layout;
+    }
+}

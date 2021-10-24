@@ -1,0 +1,21 @@
+body {
+    color: $primary-color;
+    font-size: $font-size-base;
+}
+
+main {
+    padding: $padding-size-base 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 2% 0;
+}
+
+.scale-animation {
+    @include animation(2s, 0s, forwards, infinite, alternate){
+        0% {transform: scale(1);}
+        100% {transform: scale(1.15);}
+    }
+}

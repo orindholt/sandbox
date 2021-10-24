@@ -1,0 +1,31 @@
+$breakpoints: (
+    "xs": 0px,
+    "sm": 480px,
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1200px
+);
+
+@mixin breakpoint($bp: 0){
+    @media (min-width: $bp){
+        @content;
+    }
+}
+
+.test {
+    @include breakpoint(map-get($breakpoints, "xs")){
+        color: map-get($colors, "primary");
+    }
+    @include breakpoint(map-get($breakpoints, "sm")){
+        color: map-get($colors, "blue");
+    }
+    @include breakpoint(map-get($breakpoints, "md")){
+        color: map-get($colors, "green");
+    }
+    @include breakpoint(map-get($breakpoints, "lg")){
+        color: map-get($colors, "orange");
+    }
+    @include breakpoint(map-get($breakpoints, "xl")){
+        color: map-get($colors, "blue");
+    }
+}

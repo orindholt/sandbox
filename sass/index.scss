@@ -1,31 +1,22 @@
+// use rules
+@use 'sass:color';
+@use 'sass:math';
+
+// variables, functions and loops
 @import 'variables';
+@import 'mixins';
+@import 'reset';
+@import 'functions';
+@import 'color-generator';
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// base & layout
+@import 'breakpoints';
+@import 'base';
+@import 'grid';
 
-@mixin animation($duration, $delay, $fill, $count){
-    $name: #{unique-id()};
-    @keyframes #{$name} {
-        @content;
-    }
-    animation-name: $name;
-    animation-duration: $duration;
-    animation-delay: $delay;
-    animation-fill-mode: $fill;
-    animation-iteration-count: $count;
-}
+// components import
+@import 'components/button';
+@import 'components/navbar';
 
-body {
-    padding: 3%;
-    background-color: $secondary-color;
-    color: $primary-color;
-}
-
-.Nav {
-    .List {
-        list-style: none;
-    }
-}
+// utility
+@import 'utilities';
